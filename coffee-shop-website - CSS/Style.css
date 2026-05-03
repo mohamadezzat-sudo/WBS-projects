@@ -1,0 +1,10 @@
+main {background-color: aqua;
+}
+h1 {
+    text-decoration-line: underline;
+}
+h2 {color: white;
+}
+main {
+    max-width: 800px;
+}

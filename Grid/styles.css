@@ -1,0 +1,15 @@
+.gallery-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.gallery {
+  margin: 1.5rem;
+}
+
+.gallery-item img {
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  border-radius: 5%;
+}

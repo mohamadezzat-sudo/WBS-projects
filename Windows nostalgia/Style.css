@@ -1,0 +1,78 @@
+:root {
+  --gray: #c0c0c0;
+  --dark-blue: #000080;
+  --light-blue: #1084d0;
+  --border-light: #ffffff;
+  --border-dark: #808080;
+  --border-black: #000000;
+}
+body {
+  background: #3a6ea5; /* Classic Windows Desktop Blue */
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.window {
+  background: var(--gray);
+  width: 450px;
+  border-top: 2px solid var(--border-light);
+  border-left: 2px solid var(--border-light);
+  border-right: 2px solid var(--border-black);
+  border-bottom: 2px solid var(--border-black);
+  box-shadow: 1px 1px 0 0 var(--border-dark);
+  padding: 2px;
+}
+.title-bar {
+  background: linear-gradient(90deg, var(--dark-blue), var(--light-blue));
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.window-body {
+  padding: 20px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.error-icon {
+  background: #e31b12;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+.cancel-btn {
+  float: right;
+  padding: 5px 25px;
+  background: var(--gray);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+  border-right: 1px solid var(--border-black);
+  border-bottom: 1px solid var(--border-black);
+  outline: 1px solid var(--border-dark);
+  cursor: pointer;
+}
+.cancel-btn:active {
+  border-top: 1px solid var(--border-black);
+  border-left: 1px solid var(--border-black);
+  border-right: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  outline: 1px solid var(--border-dark);
+}
